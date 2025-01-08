@@ -23,7 +23,7 @@ Therefore we set out to create a fine tuned LLM to generate custom recipes, base
 
 
 ## Diagram
-![Model diagram](https://github.com/isakkolbeins/ID2223-Whats4Dinner/blob/main/diagram.jpg?raw=true)
+![Model diagram](https://github.com/isakkolbeins/ID2223-Whats4Dinner/blob/main/diagram.png?raw=true)
 
 ## Data
 The primary data source used in fine-tuning is the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)from Kaggle, containing over 500k recipes from Food.com. This dataset is quite comprehensive and includes detailed information for each recipe. Including the columns relevant to this project; category, keywords, servings, ingredients, ingredient quantities and steps.
@@ -56,7 +56,5 @@ The re-training pipeline mirrors the initial training pipeline, with the additio
 
 ## User interface 
 The user interface builds on the [Gradio chatbot demo](https://huggingface.co/spaces/gradio-templates/chatbot) with several enhancements. Most noteworthy is the option for users to upload recipes to be saved to a Hugging Face dataset and later used for retraining. Another addition is the prompt builder, allowing users to conveniently build the prompt for the recipe generation. As well as offering generation settings where the user can fine tune decoding parameters such as; top_p temperature and max_new_tokens.
-
-
 
 - [The Huggingface space](https://huggingface.co/spaces/kolbeins/whats4dinner)  
