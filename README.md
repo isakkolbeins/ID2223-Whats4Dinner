@@ -8,7 +8,7 @@
 
 
 ## Diagram
-![Model diagram](https://github.com/isakkolbeins/ID2223-Whats4Dinner/blob/main/diagram.jpg?raw=true)
+![Model diagram](https://github.com/isakkolbeins/ID2223-Whats4Dinner/blob/main/diagram.png?raw=true)
 
 
 
