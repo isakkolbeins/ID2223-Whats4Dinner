@@ -112,4 +112,4 @@ dataset = Dataset.from_dict({"conversations": conversations})
 
 print(dataset[0]["conversations"])
 
-dataset.push_to_hub("kolbeins/recipe-training-5k", token="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")
+dataset.push_to_hub("kolbeins/recipe-training-5k", token="")
