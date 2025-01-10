@@ -51,7 +51,7 @@ Lastly to save the models to Hugging Face, we opted to save it in float16 precis
 
 
 ## Re-training pipeline 
-The re-training pipeline mirrors the initial training pipeline, with the additional steps of adding the user uploaded recipes to further enhance the model. First the recipes are converted into a Hugging Face dataset following the conversational format. Then we combine it with the original dataset before continuing with the training.
+The re-training pipeline mirrors the initial training pipeline, with the additional steps of adding the user uploaded recipes to further enhance the model. First the recipes are converted into a Hugging Face dataset following the conversational format. Then we combine it with the original dataset before continuing with the training. The re-training pipeline runs as an app on Modal, and is triggered every 7 days (at 6:58PM).
 
 
 ## User interface 
