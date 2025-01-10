@@ -26,7 +26,7 @@ Therefore we set out to create a fine tuned LLM to generate custom recipes, base
 ![Model diagram](https://github.com/isakkolbeins/ID2223-Whats4Dinner/blob/main/diagram.png?raw=true)
 
 ## Data
-The primary data source used in fine-tuning is the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)from Kaggle, containing over 500k recipes from Food.com. This dataset is quite comprehensive and includes detailed information for each recipe. Including the columns relevant to this project; category, keywords, servings, ingredients, ingredient quantities and steps.
+The primary data source used in fine-tuning is the [Food.com Recipes and Reviews dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews) from Kaggle, containing over 500k recipes from Food.com. This dataset is quite comprehensive and includes detailed information for each recipe. Including the columns relevant to this project; category, keywords, servings, ingredients, ingredient quantities and steps.
 
 ## Data pre-processing
 - Drop recipes with missing values.  
@@ -51,7 +51,7 @@ Lastly to save the models to Hugging Face, we opted to save it in float16 precis
 
 
 ## Re-training pipeline 
-The re-training pipeline mirrors the initial training pipeline, with the additional steps of adding the user uploaded recipes to further enchanted the model. First the recipes are converted into a Hugging Face dataset following the conversational format. Then we combine it with the original dataset before continuing with the training.
+The re-training pipeline mirrors the initial training pipeline, with the additional steps of adding the user uploaded recipes to further enhance the model. First the recipes are converted into a Hugging Face dataset following the conversational format. Then we combine it with the original dataset before continuing with the training.
 
 
 ## User interface 
