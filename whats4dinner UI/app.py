@@ -16,12 +16,17 @@ HF_TOKEN_WRITE = os.getenv("HF_TOKEN_WRITE")
 ######################################################################
 CSV_DATASET_PATH = "recipes.csv"
 HF_DATASET_PATH = "kolbeins/uploaded-recipes"
+
 #client = InferenceClient("kolbeins/model",  token=HF_TOKEN_WRITE) - Basic one from lab2 
+#client = InferenceClient("esha111/recipe-generator",  token=HF_TOKEN_WRITE)
 #client = InferenceClient("kolbeins/model_whats4dinner",  token=HF_TOKEN_WRITE)
 #client = InferenceClient("kolbeins/model_whats4dinner_3epochs",  token=HF_TOKEN_WRITE)
+#client = InferenceClient("kolbeins/model_whats4dinner_3epochs_simpler",  token=HF_TOKEN_WRITE)
+
+
+# The one from MODAL retraining 
 client = InferenceClient("kolbeins/model_whats4dinner_3epochs_simpler",  token=HF_TOKEN_WRITE)
 
-#client = InferenceClient("esha111/recipe-generator",  token=HF_TOKEN_WRITE)
 
 # Options for dietary restrictions and cuisines
 dietary_restrictions = [ "Gluten-Free", "Vegan", "Vegetarian", "Dairy-Free", "Nut-Free", "Soy-Free", "Keto", "Paleo", "Low-Carb", "Halal", "Kosher"]
